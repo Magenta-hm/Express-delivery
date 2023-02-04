@@ -554,7 +554,7 @@ img {
 
 	color: #ffffff;
 
-	background-color: rgb(52 48 47);
+	background-color: rgb(96 66 175);
 }
 
 .main-footer .container {
@@ -607,7 +607,7 @@ img {
 	margin-bottom: 10px;
 }
 
-.footer-social {   /*!!!!!!!!!!!!!!!!!!*/
+.footer-social {   
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -1017,6 +1017,11 @@ form {
     width: 100%;
     height: 40px;
     font-size: 16px;
+}
+
+.feedback-submit-block {
+	width: 250px;
+    margin: auto;
 }
 
 .feedback-submit-block input {
