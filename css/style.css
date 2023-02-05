@@ -347,7 +347,9 @@ img {
 /*==================== Наши преимущества =======================*/
 .features,
 .services,
-.price-list {
+.price-list,
+.territory,
+.contacts {
 	min-height: 500px;
 }
 
@@ -548,13 +550,83 @@ img {
 }
 
 
+
+/*====================== Территория обслуживания ==========================*/
+
+.territory {
+	background-color: #ffbe2e;
+	background-image: url("../img/bg-4.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+/*====================== Карта ==========================*/
+
+.contacts .container {
+	position: relative;
+	padding-bottom: 0;
+}
+
+.contacts-block {
+	position: absolute;
+
+    width: 200px;
+    height: 200px;
+    margin-top: 80px;
+    padding: 60px;
+
+    z-index: 2;
+
+    background: linear-gradient(45deg, #ff9900 0%, rgb(255 189 51) 100%);
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    
+    border-radius: 20px;
+}
+
+.contacts-block h3 {
+	margin: 0 auto;
+
+	color: #000000;
+}
+
+.contacts-block p {
+	color: #000000;
+}
+
+.live-map {
+	position: relative;
+	overflow: hidden;
+
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+
+	background-image: url("../img/map.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.live-map iframe {
+	display: block;
+	margin: auto;
+	border: none;
+	z-index: 5;
+}
+
+
+
 /*====================== Футер ==========================*/
 .main-footer {
 	padding-top: 60px;
 
 	color: #ffffff;
 
-	background-color: rgb(96 66 175);
+	background-color: #554ab4;
 }
 
 .main-footer .container {
@@ -583,7 +655,7 @@ img {
 .link-style {
 	font-weight: 600;
 
-	color: rgb(255 198 55);
+	color: rgb(255 255 255);
 	text-decoration: underline;
 }
 
@@ -690,7 +762,10 @@ img {
 
 	.features,
 	.services,
-	.price-list {
+	.price-list,
+	.territory,
+	.contacts
+	 {
 		min-height: 400px;
 	}
 
@@ -755,6 +830,32 @@ img {
 
 	.services-items {
 		padding: 0 10px;
+	}
+
+	.contacts-block {
+		width: 180px;
+		height: 180px;
+		margin-top: 140px;
+		padding: 30px;
+	}
+
+	.contacts-block h3 {
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 10px;
+	}
+
+	.contacts-block p {
+		margin: 0;
+		margin-bottom: 10px;
+	}
+
+	.live-map {
+		height: 400px;
+	}
+
+	.live-map iframe {
+		height: 400px;
 	}
 
 	.footer-contacts {
@@ -889,6 +990,10 @@ img {
 
 	.services-info {
 		padding: 10px;
+	}
+
+	.contacts-block {
+		display: none;
 	}
 
 	.main-footer {
