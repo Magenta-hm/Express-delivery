@@ -111,6 +111,10 @@ img {
 	background-color: transparent;
 }
 
+.nav-style {
+	background-color: rgb(191 184 255 / 50%);
+}
+
 .main-navigation {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -368,6 +372,14 @@ img {
 	color: #000000;
 }
 
+.features {
+	background-color: #554ab4;
+}
+
+.features .middle-heading {
+	color: white;
+}
+
 .features-items {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -554,14 +566,30 @@ img {
 /*====================== Территория обслуживания ==========================*/
 
 .territory {
-	background-color: #ffbe2e;
+	background-color: #d4d1ee;
 	background-image: url("../img/bg-4.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
+.territory-style {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: end;
 
+    background-color: rgb(255 255 255 / 70%);
+}
+
+
+.territory-info {
+	width: 65%;
+	padding: 20px;
+
+    background-color: rgb(201 186 255 / 50%);
+    border-radius: 20px;    
+}
 
 /*====================== Карта ==========================*/
 
@@ -584,7 +612,7 @@ img {
     -webkit-transition: all 0.5s linear;
     -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
-    
+
     border-radius: 20px;
 }
 
