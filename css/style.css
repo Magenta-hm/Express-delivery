@@ -401,8 +401,9 @@ img {
 }
 
 .features-items .feature-item:hover {
--webkit-box-shadow: 5px 5px 10px 2px rgb(101 108 255 / 50%);
-    box-shadow: 5px 5px 10px 2px rgb(101 108 255 / 50%);
+	-webkit-box-shadow: 5px 5px 10px 2px rgb(101 108 255 / 50%);
+	-webkit-box-shadow: 5px 5px 10px 2px rgb(255 255 255 / 50%);
+    box-shadow: 5px 5px 10px 2px rgb(255 255 255 / 50%);
     -webkit-transition: all .3s linear;
     -o-transition: all .3s linear;
     transition: all .3s linear;
@@ -1142,8 +1143,13 @@ form {
     box-sizing: border-box;
     color: #221f4a;
     margin: 0 !important;
-    border-radius: 3px;
+    border-radius: 20px;
     padding: 0;
+
+    background: linear-gradient(45deg, #ff9900 0%, rgb(255 189 51) 100%);
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
 }
 
 .block-type-form input[type="submit"].btn-block, .block-type-form input[type="reset"].btn-block, .block-type-form input[type="button"].btn-block {
@@ -1153,7 +1159,7 @@ form {
 }
 
 .feedback-submit-block {
-	width: 250px;
+	width: 200px;
     margin: auto;
 }
 
