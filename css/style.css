@@ -592,6 +592,10 @@ img {
     border-radius: 20px;    
 }
 
+.territory-items li {
+		margin-bottom: 10px;
+	}
+
 /*====================== Карта ==========================*/
 
 .contacts .container {
@@ -846,15 +850,17 @@ img {
 	.feature-item::before {
 		width: 100px;
 		height: 100px;
-		margin-left: -50px;
-		background-size: 100px;
+		
+		margin-left: -30px;
+    	background-size: 70px;
 	}
 
 	.feature-item h3 {
 		padding-top: 100px;
 		padding-bottom: 30px;
-		font-size: 24px;
-		line-height: 30px;
+
+		font-size: 18px;
+    	line-height: 24px;
 	}
 
 	.services-items {
@@ -877,6 +883,10 @@ img {
 	.contacts-block p {
 		margin: 0;
 		margin-bottom: 10px;
+	}
+
+	.manager-online {
+		display: none;
 	}
 
 	.live-map {
@@ -1040,6 +1050,10 @@ img {
 		padding: 10px;
 	}
 
+	.manager-online {
+		display: none;
+	}
+
 	.territory-style {
 		width: 300px;
     	justify-content: center;
@@ -1050,9 +1064,9 @@ img {
     	width: 100%;
 	}
 
-	.territory-items li {
+	/*.territory-items li {
 		margin-bottom: 10px;
-	}
+	}*/
 
 	.contacts-block {
 		display: none;
@@ -1203,8 +1217,24 @@ form {
 	font-weight: bold;
 }
 
+.manager-online {
+	position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: 25px;
+    left: 25px;
+    background-color: rgb(255 255 255 / 60%);
+    border-radius: 50%;
+}
 
-/*===кнопка "вверх"===*/
+.manager-icon {
+	border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}    
+
+
+/*===============кнопка "вверх"================*/
 #scroll-btn {
     display: none; 
     position: fixed;
