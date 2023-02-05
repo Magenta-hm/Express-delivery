@@ -906,6 +906,21 @@ img {
 		padding-bottom: 30px;
 	}
 
+	.wrapper {
+    	background-image: url(../img/bg-1-mobile.jpg);
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-size: cover;
+	}
+
+	.wrapper .overlay {
+		background-color: rgb(255 255 255 / 70%);
+	}
+
+	.main-header-mobile .header-content {
+		text-align: center;
+	}
+
 	.main-navigation {
 		padding-bottom: 0;
 	}
@@ -917,10 +932,12 @@ img {
 		display: -webkit-flex;
 		display: -ms-flexbox;
 		display: flex;
+
 		-webkit-box-pack: justify;
 		-webkit-justify-content: space-between;
 		-ms-flex-pack: justify;
 		justify-content: space-between;
+
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		-webkit-flex-direction: row;
@@ -933,13 +950,14 @@ img {
 		-webkit-justify-content: flex-start;
 		-ms-flex-pack: start;
 		justify-content: flex-start;
+
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
 		flex-direction: column;
 
-		background-color: rgb(235 183 53);
+		background-color: rgb(211 208 255);
 	}
 
 	.site-navigation li:not(:last-child) {
@@ -970,6 +988,7 @@ img {
 		font-size: 24px;
 		line-height: 34px;
 		width: auto;
+		text-align: center;
 	}
 
 	.middle-heading {
@@ -992,7 +1011,7 @@ img {
 	}
 
 	.feature-item {
-		width: 300px;
+		width: 250px;
 		margin-right: 0;
 		margin-bottom: 30px;
 		padding: 10px;
@@ -1005,8 +1024,8 @@ img {
 	.feature-item::before {
 		width: 80px;
 		height: 80px;
-		margin-left: -40px;
-		background-size: 80px;
+		margin-left: -30px;
+		background-size: 60px;
 	}
 
 	.feature-item h3 {
@@ -1019,6 +1038,20 @@ img {
 
 	.services-info {
 		padding: 10px;
+	}
+
+	.territory-style {
+		width: 300px;
+    	justify-content: center;
+	}
+
+	.territory-info {
+		padding: 10px;
+    	width: 100%;
+	}
+
+	.territory-items li {
+		margin-bottom: 10px;
 	}
 
 	.contacts-block {
@@ -1170,5 +1203,59 @@ form {
 	font-weight: bold;
 }
 
+
+/*===кнопка "вверх"===*/
+#scroll-btn {
+    display: none; 
+    position: fixed;
+
+    bottom: 40px; 
+    right: 40px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+
+    background: linear-gradient(45deg, #ff9900 0%, rgb(255 189 51) 100%);
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    background-position: 0;
+
+    background-size: 200% 200%;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+
+    color: white; 
+    cursor: pointer; 
+    padding: 30px; 
+    border-radius: 50%; 
+    font-size: 0px; 
+}
+
+#scroll-btn:hover {
+    background-position: right center;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease; 
+}
+
+.scroll-btn-style {
+	position: relative;
+}
+
+.scroll-btn-style::before {
+	position: absolute;
+    content: "";
+    top: -25px;
+    left: -25px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/scroll-top-button.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+/*======================================*/
 
 
